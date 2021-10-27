@@ -1,149 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="page">
-    <!-- header -->
-    <header class="header">
-      <div class="wrapper">
-        <div class="header-inner">
-          <div class="header-brand">
-            <div class="header-brand-logo"><img src="img/svg/cat_silhouette.svg" alt="cat"></div>
-            <div class="header-brand-name">buloshnik</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css"> -->
+    <link rel="stylesheet" href="owl/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl/dist/assets/owl.theme.default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- header -->
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-inner">
+            <a class="header-brand" href="index.html">
+              <div class="header-brand-logo">
+                <img src="img/icons/cat_silhouette.svg" alt="buloshnik the cat icon" />
+              </div>
+              <div class="header-brand-name">buloshnik</div>
+            </a>
+            <nav class="header-nav">
+              <div class="header-nav-inner">
+                <div class="header-nav-inner-cardholder">
+                  <div class="card header-nav-inner-card active_element">
+                    <div class="card-front">
+                      <a href="index.html" class="header-nav-link">home</a>
+                    </div>
+                    <div class="card-back">
+                      <a href="index.html" class="header-nav-link">home</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-nav-inner-cardholder">
+                  <div class="card header-nav-inner-card">
+                    <div class="card-front">
+                      <a href="posts.html" class="header-nav-link">posts</a>
+                    </div>
+                    <div class="card-back">
+                      <a href="posts.html" class="header-nav-link">posts</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-nav-inner-cardholder">
+                  <div class="card header-nav-inner-card">
+                    <div class="card-front">
+                      <a href="gallery.html" class="header-nav-link">gallery</a>
+                    </div>
+                    <div class="card-back">
+                      <a href="gallery.html" class="header-nav-link">gallery</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-nav-inner-cardholder">
+                  <div class="card header-nav-inner-card">
+                    <div class="card-front">
+                      <a href="about.html" class="header-nav-link">about</a>
+                    </div>
+                    <div class="card-back">
+                      <a href="about.html" class="header-nav-link">about</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-nav-inner-cardholder">
+                  <div class="card header-nav-inner-card">
+                    <div class="card-front">
+                      <a href="contact.html" class="header-nav-link">contact</a>
+                    </div>
+                    <div class="card-back">
+                      <a href="contact.html" class="header-nav-link">contact</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-nav-social">
+                <div class="header-nav-social-cardholder">
+                  <div class="card">
+                    <div class="card-front">
+                      <a
+                        href="https://www.instagram.com"
+                        class="header-nav-link"
+                        target="_blank"
+                        ><img src="img/icons/instagram-logo.svg" alt="instagram icon"
+                      /></a>
+                    </div>
+                    <div class="card-back">
+                      <a
+                        href="https://www.instagram.com"
+                        class="header-nav-link"
+                        target="_blank"
+                        ><img src="img/icons/instagram-logo.svg" alt="instagram icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-nav-social-cardholder">
+                  <div class="card">
+                    <div class="card-front">
+                      <a
+                        href="https://www.pinterest.com/"
+                        class="header-nav-link"
+                        target="_blank"
+                        ><img src="img/icons/pinterest-logo.svg" alt="pinterest icon"
+                      /></a>
+                    </div>
+                    <div class="card-back">
+                      <a
+                        href="https://www.pinterest.com/"
+                        class="header-nav-link"
+                        target="_blank"
+                        ><img src="img/icons/pinterest-logo.svg" alt="pinterest icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
-          <nav class="header-nav">
-            <div class="header-nav-inner">
-              <div class="header-nav-inner-cardholder">
-                <div class="card header-nav-inner-card active">
-                  <div class="card-front"><a href="index.html" class="header-nav-link">home</a></div>
-                  <div class="card-back"><a href="index.html" class="header-nav-link">home</a></div>
+        </div>
+      </header>
+
+      <!-- content -->
+      <main class="content">
+        <div class="wrapper">
+          <div class="main_title">
+            This blog is about the tenderest kitty in the whole world!
+          </div>
+          <div class="whats_new">
+            <h2>What's new:</h2>
+            <div class="main_block">
+              <div class="main_block-article">
+                <div
+                  class="main_block-article-image"
+                  style="
+                    background-image: url(img/photo/buloshnik_autumn_walk.jpg);
+                  "
+                >
+                  <img
+                    src="img/photo/buloshnik_autumn_walk.jpg"
+                    alt="buloshnik the cat tries to climb a birch tree during an autumn walk"
+                  />
+                </div>
+                <div class="main_block-article-section">
+                  <div class="main_block-article-section-container">
+                    <h3 class="main_block-article-section-container-title">
+                      <a href="#">Autumn walk, climbing...</a>
+                    </h3>
+                    <div class="main_block-article-section-container-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores, veritatis enim magni quos iste blanditiis illo
+                      iure officia quis obcaecati ad sunt reiciendis harum ipsum
+                      ea expedita cupiditate repudiandae ipsa. Lorem ipsum dolor
+                      sit amet consectetur adipisicing elit. Obcaecati quo
+                      incidunt culpa ratione delectus itaque maiores. Tenetur
+                      ullam perferendis voluptatem ea similique aliquam quidem,
+                      laudantium officiis earum possimus perspiciatis dicta.
+                    </div>
+                  </div>
+                  <a class="main_block-article-section-read_more" href="#"
+                    >read more</a
+                  >
                 </div>
               </div>
-              <div class="header-nav-inner-cardholder">
-                <div class="card header-nav-inner-card">
-                  <div class="card-front"><a href="posts.html" class="header-nav-link">posts</a></div>
-                  <div class="card-back"><a href="posts.html" class="header-nav-link">posts</a></div>
-                </div>
-              </div>
-              <div class="header-nav-inner-cardholder">
-                <div class="card header-nav-inner-card">
-                  <div class="card-front"><a href="gallery.html" class="header-nav-link">gallery</a></div>
-                  <div class="card-back"><a href="gallery.html" class="header-nav-link">gallery</a></div>
-                </div>
-              </div>
-              <div class="header-nav-inner-cardholder">
-                <div class="card header-nav-inner-card">
-                  <div class="card-front"><a href="about.html" class="header-nav-link">about</a></div>
-                  <div class="card-back"><a href="about.html" class="header-nav-link">about</a></div>
-                </div>
-              </div>
-              <div class="header-nav-inner-cardholder">
-                <div class="card header-nav-inner-card">
-                  <div class="card-front"><a href="contact.html" class="header-nav-link">contact</a></div>
-                  <div class="card-back"><a href="contact.html" class="header-nav-link">contact</a></div>
+              <div class="main_block-article">
+                <div class="main_block-article-image" style="background-image: url(img/photo/buloshnik_mustashe.jpg);">
+                  <img src="img/photo/buloshnik_mustashe.jpg" alt="funny mustache for a girl from the tail of buloshnik the cat"/>                </div>
+                <div class="main_block-article-section">
+                  <div class="main_block-article-section-container">
+                    <h3 class="main_block-article-section-container-title">
+                      <a href="#">Some mustache</a>
+                    </h3>
+                    <div class="main_block-article-section-container-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores, veritatis enim magni quos iste blanditiis illo
+                      iure officia quis obcaecati
+                    </div>
+                  </div>
+                  <a class="main_block-article-section-read_more" href="#">read more</a>
                 </div>
               </div>
             </div>
-            <div class="header-nav-social">
-              <div class="header-nav-social-cardholder">
-                <div class="card">
-                  <div class="card-front">
-                    <a href="https://www.instagram.com" class="header-nav-link" target="_blank"><img src="img/svg/instagram-logo.svg" alt="instagram"></a>
+            <div class="main_block">
+              <div class="main_block-article">
+                <div class="main_block-article-image" style="background-image: url(img/photo/buloshnik_ready_to_rush.jpg);">
+                  <img src="img/photo/buloshnik_ready_to_rush.jpg" alt="" />
+                </div>
+                <div class="main_block-article-section">
+                  <div class="main_block-article-section-container">
+                    <h3 class="main_block-article-section-container-title">
+                      <a href="#">Ready to rush</a>
+                    </h3>
+                    <div class="main_block-article-section-container-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores, veritatis enim magni quos iste blanditiis illo
+                      iure officia quis obcaecati ad sunt reiciendis harum ipsum
+                      ea expedita cupiditate repudiandae ipsa. Lorem ipsum dolor
+                      sit amet consectetur adipisicing elit. Obcaecati quo
+                      incidunt culpa ratione delectus itaque maiores. Tenetur
+                      ullam perferendis voluptatem ea similique aliquam quidem,
+                      laudantium officiis earum possimus perspiciatis dicta.
+                    </div>
                   </div>
-                  <div class="card-back">
-                    <a href="https://www.instagram.com" class="header-nav-link" target="_blank"><img src="img/svg/instagram-logo.svg" alt="instagram"></a>
-                  </div>
+                  <a class="main_block-article-section-read_more" href="#">read more</a>
                 </div>
               </div>
-              <div class="header-nav-social-cardholder">
-                <div class="card">
-                  <div class="card-front">
-                    <a href="https://www.pinterest.com/" class="header-nav-link" target="_blank"><img src="img/svg/pinterest-logo.svg" alt="pinterest"></a>
+              <div class="main_block-article">
+                <div class="main_block-article-video">
+                  <video
+                    src="video/video_2021-10-26_15-15-42.mp4"
+                    controls
+                  ></video>
+                </div>
+                <div class="main_block-article-section">
+                  <div class="main_block-article-section-container">
+                    <h3 class="main_block-article-section-container-title">
+                      <a href="#">When your tongue is too scratchy</a>
+                    </h3>
+                    <div class="main_block-article-section-container-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores, veritatis enim magni quos iste blanditiis illo
+                      iure officia quis obcaecati
+                    </div>
                   </div>
-                  <div class="card-back">
-                    <a href="https://www.pinterest.com/" class="header-nav-link" target="_blank"><img src="img/svg/pinterest-logo.svg" alt="pinterest"></a>
-                  </div>
+                  <a class="main_block-article-section-read_more" href="#">read more</a>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- content -->
-    <main class="content">
-      <div class="wrapper">
-        <div class="main_title">
-          This blog is about the tenderest kitty in the whole world!
-        </div>
-        <div class="main_block">
-          <article class="main_block-article_left">
-            <div class="main_article_section">
-              <h3 class="main_article-title">Some awsome article title</h3>
-              <div class="main_article-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veritatis enim magni quos iste blanditiis illo iure officia quis obcaecati ad sunt reiciendis harum ipsum ea expedita cupiditate repudiandae ipsa.</div>
+          </div>
+
+          <!-- carousel -->
+          <div class="carousel">
+            <div class="carousel-wrap">
+              <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=1" />
+                      </div>
+                      <span class="img-text">nightlife</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=2" />
+                      </div>
+                      <span class="img-text">abstract</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=3" />
+                      </div>
+                      <span class="img-text">animals</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=4" />
+                      </div>
+                      <span class="img-text">nature</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=5" />
+                      </div>
+                      <span class="img-text">business</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=6" />
+                      </div>
+                      <span class="img-text">cats</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=7" />
+                      </div>
+                      <span class="img-text">city</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=8" />
+                      </div>
+                      <span class="img-text">food</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=9" />
+                      </div>
+                      <span class="img-text">fashion</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=10" />
+                      </div>
+                      <span class="img-text">people</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=11" />
+                      </div>
+                      <span class="img-text">sports</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=12" />
+                      </div>
+                      <span class="img-text">technics</span>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="carousel_link" href="gallery.html">
+                      <div class="carousel-item-img_wrapper">
+                        <img src="https://picsum.photos/640/480?pic=13" />
+                      </div>
+                      <span class="img-text">transport</span>
+                    </a>
+                  </div>
+              </div>
             </div>
-          </article>
-          <article class="main_block-article_right">
-            <div class="main_article_section">
-              <h3 class="main_article-title">Some awsome article title</h3>
-              <div class="main_article-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veritatis enim magni quos iste blanditiis illo iure officia quis obcaecati ad sunt reiciendis harum ipsum ea expedita cupiditate repudiandae ipsa.</div>
-            </div>
-          </article>
-        </div>
-        <div class="test-div">
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cumque natus adipisci ducimus quo aspernatur perspiciatis in sequi obcaecati dolorem. Iure fuga quisquam fugiat officiis blanditiis molestiae! Aliquam, veniam quos.</div>
-        </div>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer class="footer"></footer>
-  </div>
-</body>
+          </div><!-- carousel -->
+        </div> <!-- wrapper -->
+      </main> <!-- content -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="wrapper"></div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script src="slick/slick.min.js"></script>
+    <script src="owl/dist/owl.carousel.min.js"></script>
+
+    <script src="script/script.js"></script>
+  </body>
 </html>
