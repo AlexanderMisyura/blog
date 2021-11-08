@@ -1,4 +1,4 @@
-document.querySelectorAll(".header-nav-link").forEach(function(link) {
+document.querySelectorAll(".header-nav-social .header-nav-link").forEach(function(link) {
   link.setAttribute("target", "_blank");
 });
 
