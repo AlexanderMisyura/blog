@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 120px 0 50px;
   text-align: center;
   font: 300  4rem Kalam, sans-serif;
-  text-shadow: 4px 3px 0px #7A7A7A;
+  text-shadow: 4px 3px 0px #cbcbcb;
   color: #FF97A4;
   pointer-events: none;
 }

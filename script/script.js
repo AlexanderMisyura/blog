@@ -1,3 +1,8 @@
+document.querySelectorAll(".header-nav-link").forEach(function(link) {
+  link.setAttribute("target", "_blank");
+});
+
+
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     margin: 30,
@@ -18,4 +23,5 @@ $(document).ready(function(){
         }
     }
   });
+  
 });
