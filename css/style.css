@@ -215,13 +215,13 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 120px 0 50px;
   text-align: center;
   font: 300  4rem Kalam, sans-serif;
-  text-shadow: 4px 3px 0px #cbcbcb;
+  text-shadow: 4px 3px 0 #cbcbcb;
   color: #FF97A4;
   pointer-events: none;
 }
 
 .whats_new {
-  font-family: Kalam;
+  font-family: Kalam, sans-serif;
   margin-bottom: 100px;
 }
 
@@ -295,17 +295,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main_block-article-section-container-title a {
   text-decoration: none;
-  color: #FF97A4;
+  color: #ff97a4;
 }
 
 .main_block-article-section-container-text {
   height: 250px;
 
   overflow: hidden;
-	color: transparent;
+  color: transparent;
   background-clip: text;
-	-webkit-background-clip: text;
-	background-image: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
 }
 
 .main_block-article-section-read_more {
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .owl-carousel .owl-nav{
   overflow: hidden;
-  height: 0px;
+  height: 0;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, 
@@ -400,11 +400,11 @@ h1, h2, h3, h4, h5, h6, p {
     left: -33px;
 }
 .owl-carousel .next-slide{
-    background: url(../img/icons/nav-icon4.png) no-repeat scroll -24px 0px;
+    background: url(../img/icons/nav-icon4.png) no-repeat scroll -24px 0;
     right: -33px;
 }
 .owl-carousel .prev-slide:hover{
-   background-position: 0px -53px;
+   background-position: 0 -53px;
 }
 .owl-carousel .next-slide:hover{
   background-position: -24px -53px;
